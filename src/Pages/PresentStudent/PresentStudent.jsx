@@ -3,9 +3,12 @@ import React from "react";
 const PresentStudent = () => {
   return (
     <div>
-      <h2 className="text-center font-bold text-xl">Total present student right now:3</h2>
+      <h2 className="text-center font-bold text-xl">
+        Total present student right now:3
+      </h2>
+
       <div className="overflow-x-auto">
-        <table className="table w-full">
+        <table className="w-11/12 mx-auto text-center border border-primary">
           <thead>
             <tr>
               <th></th>

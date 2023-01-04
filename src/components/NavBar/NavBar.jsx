@@ -5,7 +5,7 @@ import logo from './logo.jpg';
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,14 +26,14 @@ const NavBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 default-bg text-white"
             >
               <li>
-                <Link to='/'>Home</Link>
+                <Link to="/">Home</Link>
               </li>
 
               <li>
-                <Link to='/present'>Present Students</Link>
+                <Link to="/present">Present Students</Link>
               </li>
               <li>
                 <Link to="/checkin">Checkin Student</Link>
@@ -44,22 +44,22 @@ const NavBar = () => {
             <img src={logo} alt="logo" className="h-10" />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link>Home</Link>
+              <Link to="/">Home</Link>
             </li>
 
             <li>
-              <Link>Present Students</Link>
+              <Link to="/present">Present Students</Link>
             </li>
             <li>
-              <Link>Checkin Student</Link>
+              <Link to="/checkin">Checkin Student</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn">Login</Link>
+          <Link className="btn btn-outline btn-accent">Login</Link>
         </div>
       </div>
     </div>
