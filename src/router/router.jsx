@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import NavBar from '../components/NavBar/NavBar';
 import CheckinStudent from '../Pages/CheckinStudent/CheckinStudent';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
+import PresentStudent from '../Pages/PresentStudent/PresentStudent';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/checkin",
         element: <CheckinStudent></CheckinStudent>,
+      },
+      {
+        path: "/present",
+        element: <PresentStudent></PresentStudent>,
       },
     ],
   },
