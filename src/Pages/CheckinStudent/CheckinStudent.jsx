@@ -13,7 +13,7 @@ const CheckinStudent = () => {
     roll,
     checkinTime,
   };
-  fetch("http://localhost:5000/CheckinStudent", {
+  fetch("https://school-management-server.vercel.app/CheckinStudent", {
     method: "POST",
     headers: {
       "content-type": "application/json",

@@ -4,14 +4,14 @@ const PresentStudent = () => {
   const [students, setStudents] = useState([]);
   const [reFetch,setReFetch] = useState(false)
   useEffect(() => {
-    fetch(`http://localhost:5000/getPresentStudent`)
+    fetch(`https://school-management-server.vercel.app/getPresentStudent`)
       .then((res) => res.json())
       .then((data) => {
         setStudents(data);
       });
   }, [reFetch]); 
   const handleCheckOut = (student) => {
- fetch(`http://localhost:5000/CheckOut/${student._id}`, {
+ fetch(`https://school-management-server.vercel.app/CheckOut/${student._id}`, {
    method: "DELETE"})
    .then((res) => res.json())
    .then((data) => {
